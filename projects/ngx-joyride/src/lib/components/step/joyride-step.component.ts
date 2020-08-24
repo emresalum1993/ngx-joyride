@@ -386,7 +386,7 @@ export class JoyrideStepComponent implements OnInit, OnDestroy, AfterViewInit {
         this.renderer.setStyle(
             this.stepHolder.nativeElement,
             'transform',
-            `translate(-${this.stepWidth / 2}px, -${this.stepHeight / 2}px)`
+            `translate(-${Math.floor(this.stepWidth / 2)}px, -${Math.floor(this.stepHeight / 2)}px)`
         );
         this.showArrow = false;
     }
